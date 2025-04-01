@@ -1,6 +1,11 @@
 import { Poppins } from 'next/font/google'
 import React from 'react'
-import { poppinsFont } from '~alias~/app/page'
+
+const poppinsFont = Poppins({
+  weight: ['400', '600', '700', '800'],
+  fallback: ["Roboto"],
+  subsets: ["latin"]
+})
 
 
 export default function HeaderLayout() {
