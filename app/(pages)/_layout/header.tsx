@@ -3,8 +3,10 @@ import React from 'react'
 
 const poppinsFont = Poppins({
   weight: ['400', '600', '700', '800'],
-  fallback: ["Roboto"],
-  subsets: ["latin"]
+  subsets: ["latin"],
+  display: 'swap',
+  style: 'normal',
+  fallback: ['system-ui', 'sans-serif']
 })
 
 
