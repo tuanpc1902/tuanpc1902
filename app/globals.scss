@@ -1,0 +1,79 @@
+@import 'normalize.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --text-color: #161823;
+
+  // Default layout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --default-layout-horizontal-spacer: 24px;
+  --border-radius: 0.4rem;
+  --page-max-width: 110rem;
+  --tw-bg-opacity: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: rgba(255 255 255 / var(--tw-bg-opacity));
+  overflow-y: overlay;
+  background: rgba(15 23 42 / var(--tw-bg-opacity));
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.bg-gradient-primary {
+  background-image: linear-gradient(to right top, #fc6c8f, #ffb86c) !important;
+}
+
+.bg-gradient-secondary {
+  background-image: linear-gradient(to right top, #6a5af9, #d66efd) !important;
+}
+
+.border-primary {
+  border-color: #ffb86c;
+}
